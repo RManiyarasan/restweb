@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color:dimgray;
+            color: white;
+            text-align: center;
+            padding: 40px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        header p {
+            margin: 10px 0;
+            font-size: 1.2em;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .menu-item {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .menu-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .menu-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .menu-item-content {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .menu-item-content h3 {
+            margin: 10px 0;
+            font-size: 1.5em;
+            color: #333;
+        }
+
+        .menu-item-content p {
+            margin: 5px 0;
+            font-size: 1em;
+            color: #666;
+        }
+
+        .menu-item-content .price {
+            font-size: 1.2em;
+            color: #d35400;
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Our Menu</h1>
+        <p>Explore the flavors of our finest dishes</p>
+    </header>
+
+    <div class="container">
+        <div class="menu-grid">
+           
+            <div class="menu-item">
+                <img src="Dosai.jpg" alt="Dosai">
+                <div class="menu-item-content">
+                    <h3>Dosai</h3>
+                    <p>Crispy Dosai</p>
+                    <p class="price">Rs.30</p>
+                </div>
+            </div>
+
+
+            <div class="menu-item">
+                <img src="Idly.jpg" alt="Idly">
+                <div class="menu-item-content">
+                    <h3>Idly</h3>
+                    <p>Special idly</p>
+                    <p class="price">Rs.10</p>
+                </div>
+            </div>
+
+            
+            <div class="menu-item">
+                <img src="chicken.jpg" alt="Chicken gravy">
+                <div class="menu-item-content">
+                    <h3>Chicken gravy</h3>
+                    <p>Spicy chicken gravy.</p>
+                    <p class="price">Rs.100</p>
+                </div>
+            </div>
+
+            
+            <div class="menu-item">
+                <img src="mutton.jpg" alt="Mutton gravy">
+                <div class="menu-item-content">
+                    <h3>Mutton gravy</h3>
+                    <p>Delicious mutton gravy</p>
+                    <p class="price">Rs.199</p>
+                </div>
+            </div>
+
+           
+            
+            </div>
+
+            
+            
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Designed by [Your Name] &copy; 2024</p>
+    </footer>
+
+</body>
+</html>
